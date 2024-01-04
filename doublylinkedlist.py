@@ -14,6 +14,9 @@ class DoublyLinkedList:
         self.tail.prev = self.head
         self.tail.next = None
 
+    def getLength(self):
+        return self.nodeCount
+
     def traverse(self):
         result = []
         curr = self.head
