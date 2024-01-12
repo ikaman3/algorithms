@@ -60,16 +60,24 @@ def postfixEval(tokenList):
 	valStack = Stack()
 
 	for token in tokenList:
-		if type(token) is int:
-			____
-		elif token == '*':
-			____
-		elif token == '/':
-			____
+		if type(token) is int: # 피연산자라면 스택에 push
+			valStack.push(token)
+		elif token == '*': # +, * 연산자는 순서 상관없음
+			second = valStack.pop()
+			first = valStack.pop()
+			valStack.push(first * second)
+		elif token == '/': # -, / 연산자는 순서 상관있음
+			second = valStack.pop()
+			first = valStack.pop()
+			valStack.push(first / second)
 		elif token == '+':
-			____
+			second = valStack.pop()
+			first = valStack.pop()
+			valStack.push(first + second)
 		elif token == '-':
-			____
+			second = valStack.pop()
+			first = valStack.pop()
+			valStack.push(first - second)
 
 	return valStack.pop()
 
