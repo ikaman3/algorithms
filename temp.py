@@ -1,9 +1,5 @@
-# from stack_prac2 import *
-# (A + B)
-# {(A + B) * C}
-# [(A + B) * (C + D)]
-
-# (A + B
-#  A + B)
-# {A * (B + C})
-# [(A + B) * (C + D)}
+# from queue import LinkedListQueue
+# Q = LinkedListQueue()
+# Q.enqueue('A')
+# Q.enqueue('B')
+# Q.enqueue('C')

@@ -1,7 +1,6 @@
 from doublylinkedlist import Node
 from doublylinkedlist import DoublyLinkedList
 
-
 class ArrayStack:
     def __init__(self):
         self.data = []
@@ -27,9 +26,7 @@ class ArrayStack:
         else:
             return None
 
-
 class LinkedListStack:
-
     def __init__(self):
         self.data = DoublyLinkedList()
 
