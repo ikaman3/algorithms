@@ -54,11 +54,12 @@ class DoublyLinkedList:
     
     def insertBefore(self, next, newNode):
         prev = next.prev
+        newNode.next = prev.next
         newNode.prev = prev
-        newNode.next = next
         prev.next = newNode
         next.prev = newNode
         self.nodeCount += 1
+    
         return True
     
     def insertAfter(self, prev, newNode):
