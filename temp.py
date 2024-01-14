@@ -1,5 +1,12 @@
-# from queue import LinkedListQueue
-# Q = LinkedListQueue()
-# Q.enqueue('A')
-# Q.enqueue('B')
-# Q.enqueue('C')
+from circular_queue import *
+Q = CircularQueue(6)
+Q.enqueue('A')
+Q.enqueue('B')
+Q.enqueue('C')
+Q.enqueue('D')
+Q.enqueue('E')
+Q.enqueue('F')
+Q.enqueue('G')
+Q.enqueue('H')
+Q.enqueue('I')
+Q.enqueue('J')
