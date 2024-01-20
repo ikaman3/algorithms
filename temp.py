@@ -1,12 +1,5 @@
-from priority_queue import PriorityQueue
-Q = PriorityQueue(6)
-Q.enqueue(1)
-Q.enqueue(6)
-Q.enqueue(9)
-Q.enqueue(2)
-Q.enqueue(7)
-Q.enqueue(10)
-Q.enqueue(500)
-Q.enqueue(3)
-Q.enqueue(5)
-Q.enqueue(8)
+from binary_tree import *
+root = Node(5)
+T = BinaryTree(root)
+for i in bfsList:
+    print(i.data)
