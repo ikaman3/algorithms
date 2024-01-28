@@ -1,9 +1,11 @@
-from binary_search_tree import *
-T = BinSearchTree()
+from heap import *
+import random
+def generate_random_number():
+    return random.randint(1, 1000)
 
-for i in range(1, 5000):
-    T.insert(i, 'test')
+max_heap = MaxHeap()
 
-list = T.inorder()
-for node in list:
-    print(node.key, node.data)
+for _ in range(100):
+    max_heap.insert(generate_random_number())
+
+print(max_heap.data)
